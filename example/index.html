@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../asciiforms.css">
+	<script src="jquery-2.1.4.min.js"></script>
+	<script src="../asciiforms.js"></script>
+	<script src="sprintf.js"></script>
+	<script src="bank.js"></script>
+</head>
+<script>
+var USERS = {
+	'bob':{
+		'pass':'bbb',
+		'num':'00 0000 0000 0000 0000 0000 0001',
+		'history':[]
+	},'alice':{
+		'pass':'aaa',
+		'num':'00 0000 0000 0000 0000 0000 0002',
+		'history':[
+			{'name':'Płatność kartą','value':-20},
+			{'name':'Płatność kartą','value':-22.45},
+			{'name':'Płatność kartą','value':-100},
+			{'name':'Kieszonkowe','value':400},
+			{'name':'Stypendium','value':199.99},
+			{'name':'Łapówki','value':-1000},
+			{'name':'Od Babci','value':500}
+		]
+	}
+};
+</script>
+<body><pre id="box" style="font-size:3.0vh"></pre></body>
+</html>
